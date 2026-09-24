@@ -1,5 +1,7 @@
 # Order Pipe privacy policy — DRAFT, NOT FOR PUBLIC LISTING
 
+**Superseded for listing use on 24 September 2026:** the operator-directed current notice is published at [Order Pipe's public `/privacy` page](https://web-xzemujws6gu2rkjf8zrzuiaz.49.13.226.185.sslip.io/privacy). This file is historical working material, not the URL saved in Shopify Resources.
+
 This draft describes the application as implemented. It is not an approved legal notice and must not be entered in the Shopify App Store listing until the remaining operational facts, subprocessors, international transfers, and applicable legal obligations are confirmed and the operator approves the final text.
 
 - **Operator:** PIXEL GOBLIN LTD, company number 17201045 ([Companies House record](https://find-and-update.company-information.service.gov.uk/company/17201045))
