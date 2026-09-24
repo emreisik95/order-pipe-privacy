@@ -22,7 +22,7 @@ Service providers used for hosting, database, email alerts, and operational secu
 
 ## Retention and deletion
 
-Replayable payloads are retained for up to 14 days. Operational delivery metadata is retained for up to 90 days. Minimal billing and security records may be kept longer only as required for a documented operational or legal purpose; the exact periods must be approved before publication. Expiry of a replay payload means the original bytes can no longer be replayed.
+Replayable order payloads are scheduled to expire after 14 days, and most routine delivery activity after 90 days. A first successful export remains linked to a billing usage record and may remain until 390 days after the billing cycle ends; daily cleanup then removes eligible records. Audit events and unresolved operational records currently have no fixed maximum retention period. Those periods must be set and approved before publication. Expiry of a replay payload means the original bytes can no longer be replayed.
 
 An app uninstall or loss of Shopify access stops new exports. The app deletes its destination credentials and pending personal payloads under its lifecycle process. Shopify privacy requests are handled through the applicable `customers/data_request`, `customers/redact`, and `shop/redact` webhooks. Erasure protections prevent locally deleted customer data from reappearing through queued work or reconciliation. A copy already delivered to a merchant-controlled destination is subject to the merchant's downstream retention and deletion controls; Order Pipe does not delete unrelated merchant data or claim remote erasure after access is revoked. Backup-retention and restoration controls must be verified before final publication.
 
@@ -36,6 +36,6 @@ Merchants and affected customers can make an access or deletion request through 
 
 - Verify that the support mailbox receives and can answer an external test message, and approve the registered-office address for privacy correspondence.
 - Record the actual hosting, database, backup, email, and monitoring providers; their processing locations; and any international transfer mechanism.
-- Approve the retention period for billing/security/audit records and for encrypted backups, including how erasures propagate to restored copies.
+- Approve the retention period for billing/security/audit and unresolved operational records, and for encrypted backups, including how erasures propagate to restored copies. The current app-facing draft explicitly discloses that no audit/unresolved-record maximum is configured; this is not a public-release-ready policy.
 - Determine and document PIXEL GOBLIN LTD's role for merchant-directed order exports versus its own billing/support/security data, the applicable lawful bases, and the rights and complaint information required by the [ICO privacy-information checklist](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/the-right-to-be-informed/checklists/).
 - Approve the final wording and effective date. Only then remove the DRAFT label and use the resulting public URL in Shopify's listing and `PRIVACY_POLICY_URL`.
