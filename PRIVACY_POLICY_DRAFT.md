@@ -1,11 +1,12 @@
 # Order Pipe privacy policy — DRAFT, NOT FOR PUBLIC LISTING
 
-This draft describes the application as implemented. It is not an approved legal notice and must not be entered in the Shopify App Store listing until the operator details below, backup practices, subprocessors, and applicable legal obligations are confirmed.
+This draft describes the application as implemented. It is not an approved legal notice and must not be entered in the Shopify App Store listing until the remaining operational facts, subprocessors, international transfers, and applicable legal obligations are confirmed and the operator approves the final text.
 
-**Operator:** [CONFIRMED_LEGAL_OPERATOR_NAME]  
-**Jurisdiction:** [CONFIRMED_JURISDICTION]  
-**Privacy and support contact:** [VERIFIED_PUBLIC_SUPPORT_EMAIL]  
-**Effective date:** [APPROVED_EFFECTIVE_DATE]
+- **Operator:** PIXEL GOBLIN LTD, company number 17201045 ([Companies House record](https://find-and-update.company-information.service.gov.uk/company/17201045))
+- **Registered office:** 66 Paul Street, London, EC2A 4NA, United Kingdom (confirm this is also the intended privacy correspondence address)
+- **Jurisdiction:** United Kingdom
+- **Privacy and support contact supplied by operator:** support@pixelgoblin.link (inbound delivery not yet independently tested)
+- **Effective date:** Not assigned; this is an unapproved draft.
 
 ## What the app handles
 
@@ -17,7 +18,7 @@ The merchant selects each destination and chooses whether to activate it. SFTP e
 
 Order Pipe uses this information to connect to Shopify, prepare and deliver the merchant's selected order exports, reconcile missed updates, display delivery history, investigate failures, enforce plan allowances, respond to support and privacy requests, and protect the service. Production order records are sent only to the destinations the merchant has configured and activated. These destinations are controlled by the merchant and can have their own data-processing and retention terms. Order Pipe does not claim that endpoint acceptance proves downstream processing.
 
-Service providers used for hosting, database, email alerts, and operational security may process limited data on the operator's behalf. The actual provider list, locations, and contractual terms must be verified before this draft is published. No data is sold through Order Pipe.
+Service providers used for hosting, database, email alerts, and operational security may process limited data on the operator's behalf. The actual provider list, processing locations, international transfer safeguards, and contractual terms must be verified before this draft is published. No data is sold through Order Pipe.
 
 ## Retention and deletion
 
@@ -29,4 +30,12 @@ An app uninstall or loss of Shopify access stops new exports. The app deletes it
 
 Shopify tokens and destination secrets are encrypted at rest. The application limits access by shop and excludes credentials and full order payloads from application logs. Network connections use TLS where applicable; SFTP connections verify the server host key. No system is risk-free, and this notice does not promise absolute security or uninterrupted delivery.
 
-Merchants and affected customers can make an access or deletion request through Shopify's privacy process or contact [VERIFIED_PUBLIC_SUPPORT_EMAIL]. The operator will verify the request and coordinate with the merchant when the destination is under the merchant's control. This notice may be updated when practices change; the effective date above will identify the approved version.
+Merchants and affected customers can make an access or deletion request through Shopify's privacy process or contact support@pixelgoblin.link. The operator will verify the request and coordinate with the merchant when the destination is under the merchant's control. This notice may be updated when practices change; the effective date above will identify the approved version.
+
+## Before this can become the published policy
+
+- Verify that the support mailbox receives and can answer an external test message, and approve the registered-office address for privacy correspondence.
+- Record the actual hosting, database, backup, email, and monitoring providers; their processing locations; and any international transfer mechanism.
+- Approve the retention period for billing/security/audit records and for encrypted backups, including how erasures propagate to restored copies.
+- Determine and document PIXEL GOBLIN LTD's role for merchant-directed order exports versus its own billing/support/security data, the applicable lawful bases, and the rights and complaint information required by the [ICO privacy-information checklist](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/the-right-to-be-informed/checklists/).
+- Approve the final wording and effective date. Only then remove the DRAFT label and use the resulting public URL in Shopify's listing and `PRIVACY_POLICY_URL`.
